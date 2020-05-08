@@ -1,0 +1,111 @@
+08-May-2020 09:59:27.789 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+08-May-2020 09:59:27.790 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9090"]
+08-May-2020 09:59:27.796 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-May-2020 09:59:27.883 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [sec-0.0.1-SNAPSHOT] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+08-May-2020 09:59:27.884 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [sec-0.0.1-SNAPSHOT] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:85)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+08-May-2020 09:59:28.015 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9090"]
+08-May-2020 09:59:28.016 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9090"]
+08-May-2020 09:59:28.505 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.34
+08-May-2020 09:59:28.511 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Apr 3 2020 12:02:52 UTC
+08-May-2020 09:59:28.511 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.34.0
+08-May-2020 09:59:28.511 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+08-May-2020 09:59:28.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            3.13.0-24-generic
+08-May-2020 09:59:28.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+08-May-2020 09:59:28.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-openjdk-amd64/jre
+08-May-2020 09:59:28.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_232-8u232-b09-0ubuntu1~16.04.1-b09
+08-May-2020 09:59:28.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+08-May-2020 09:59:28.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /root/tomcat/apache-tomcat-9.0.34
+08-May-2020 09:59:28.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /root/tomcat/apache-tomcat-9.0.34
+08-May-2020 09:59:28.525 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/root/tomcat/apache-tomcat-9.0.34/conf/logging.properties
+08-May-2020 09:59:28.525 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-May-2020 09:59:28.525 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-May-2020 09:59:28.525 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-May-2020 09:59:28.525 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+08-May-2020 09:59:28.525 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-May-2020 09:59:28.526 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/root/tomcat/apache-tomcat-9.0.34
+08-May-2020 09:59:28.526 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/root/tomcat/apache-tomcat-9.0.34
+08-May-2020 09:59:28.526 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/root/tomcat/apache-tomcat-9.0.34/temp
+08-May-2020 09:59:28.526 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+08-May-2020 09:59:29.027 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9090"]
+08-May-2020 09:59:29.106 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [892] milliseconds
+08-May-2020 09:59:29.170 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-May-2020 09:59:29.170 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.34]
+08-May-2020 09:59:29.200 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/root/tomcat/apache-tomcat-9.0.34/webapps/sec-0.0.1-SNAPSHOT.war]
+08-May-2020 09:59:31.459 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-May-2020 09:59:38.058 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/root/tomcat/apache-tomcat-9.0.34/webapps/sec-0.0.1-SNAPSHOT.war] has finished in [8,858] ms
+08-May-2020 09:59:38.060 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/root/tomcat/apache-tomcat-9.0.34/webapps/sec-app-angular]
+08-May-2020 09:59:38.082 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/root/tomcat/apache-tomcat-9.0.34/webapps/sec-app-angular] has finished in [22] ms
+08-May-2020 09:59:38.082 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/root/tomcat/apache-tomcat-9.0.34/webapps/examples]
+08-May-2020 09:59:38.363 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/root/tomcat/apache-tomcat-9.0.34/webapps/examples] has finished in [281] ms
+08-May-2020 09:59:38.364 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/root/tomcat/apache-tomcat-9.0.34/webapps/host-manager]
+08-May-2020 09:59:38.409 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/root/tomcat/apache-tomcat-9.0.34/webapps/host-manager] has finished in [46] ms
+08-May-2020 09:59:38.410 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/root/tomcat/apache-tomcat-9.0.34/webapps/docs]
+08-May-2020 09:59:38.430 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/root/tomcat/apache-tomcat-9.0.34/webapps/docs] has finished in [20] ms
+08-May-2020 09:59:38.430 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/root/tomcat/apache-tomcat-9.0.34/webapps/ROOT]
+08-May-2020 09:59:38.459 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/root/tomcat/apache-tomcat-9.0.34/webapps/ROOT] has finished in [29] ms
+08-May-2020 09:59:38.460 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/root/tomcat/apache-tomcat-9.0.34/webapps/manager]
+08-May-2020 09:59:38.526 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/root/tomcat/apache-tomcat-9.0.34/webapps/manager] has finished in [67] ms
+08-May-2020 09:59:38.527 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/root/tomcat/apache-tomcat-9.0.34/webapps/sec-app-react]
+08-May-2020 09:59:38.543 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/root/tomcat/apache-tomcat-9.0.34/webapps/sec-app-react] has finished in [16] ms
+08-May-2020 09:59:38.553 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9090"]
+08-May-2020 09:59:38.576 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [9,468] milliseconds
+08-May-2020 11:27:43.753 WARNING [http-nio-9090-exec-3] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [sec-0.0.1-SNAPSHOT] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+08-May-2020 11:27:43.756 WARNING [http-nio-9090-exec-3] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [sec-0.0.1-SNAPSHOT] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:85)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+08-May-2020 11:27:44.307 INFO [http-nio-9090-exec-3] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/sec-0.0.1-SNAPSHOT]
+08-May-2020 11:27:44.456 INFO [http-nio-9090-exec-6] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/root/tomcat/apache-tomcat-9.0.34/webapps/sec-0.0.1-SNAPSHOT.war]
+08-May-2020 11:27:44.737 INFO [Finalizer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [org.apache.http.impl.conn.PoolingHttpClientConnectionManager$2]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [org.apache.http.impl.conn.PoolingHttpClientConnectionManager$2]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1385)
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1373)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1226)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1188)
+		at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:413)
+		at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.finalize(PoolingHttpClientConnectionManager.java:207)
+		at java.lang.System$2.invokeFinalize(System.java:1270)
+		at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:102)
+		at java.lang.ref.Finalizer.access$100(Finalizer.java:34)
+		at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:217)
+08-May-2020 11:27:45.840 INFO [http-nio-9090-exec-6] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-May-2020 11:27:46.779 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1385)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1038)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:117)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+08-May-2020 11:27:49.692 INFO [http-nio-9090-exec-6] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/root/tomcat/apache-tomcat-9.0.34/webapps/sec-0.0.1-SNAPSHOT.war] has finished in [5,235] ms
+08-May-2020 12:57:07.563 WARNING [http-nio-9090-exec-19] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [sec-0.0.1-SNAPSHOT] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+08-May-2020 12:57:07.564 WARNING [http-nio-9090-exec-19] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [sec-0.0.1-SNAPSHOT] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:85)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+08-May-2020 12:57:08.088 INFO [http-nio-9090-exec-19] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/sec-0.0.1-SNAPSHOT]
+08-May-2020 12:57:08.217 INFO [http-nio-9090-exec-16] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/root/tomcat/apache-tomcat-9.0.34/webapps/sec-0.0.1-SNAPSHOT.war]
+08-May-2020 12:57:08.931 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1385)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1038)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:117)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+08-May-2020 12:57:09.294 INFO [http-nio-9090-exec-16] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-May-2020 12:57:14.115 INFO [http-nio-9090-exec-16] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/root/tomcat/apache-tomcat-9.0.34/webapps/sec-0.0.1-SNAPSHOT.war] has finished in [5,897] ms
