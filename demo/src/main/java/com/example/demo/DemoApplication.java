@@ -17,7 +17,8 @@ public class DemoApplication {
 		  Class.forName("com.mysql.jdbc.Driver"); 
 
 	      // Step 2: Establish the connection to the database 
-	      String url = "jdbc:mysql://localhost:3306/sec_schema"; 
+	      //String url = "jdbc:mysql://localhost:3306/sec_schema"; 
+	      String url = "jdbc:mysql://10.1.101.52:3306/sec_schema"; 
 	      System.out.println("This statement Before connection");
 	      Connection conn = DriverManager.getConnection(url,"mysql","root"); 
 		  //Connection conn = DriverManager.getConnection(url,"root","mysql");  
