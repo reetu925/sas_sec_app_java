@@ -19,7 +19,7 @@ public class DemoApplication {
 	      // Step 2: Establish the connection to the database 
 	      //String url = "jdbc:mysql://10.1.101.52:3306/sec_schema"; 
 	      //String url = "jdbc:mysql://localhost:3306/sec_schema"; 
-	      String url =  "jdbc:mysql://localhost:3306/sec_schema?user=mysql&password=root";
+	      String url =  "jdbc:mysql://localhost:3306/sec_schema";
 	      System.out.println("This statement Before connection");
 	      try {
 	    	  Class.forName("com.mysql.cj.jdbc.Driver").newInstance(); 
