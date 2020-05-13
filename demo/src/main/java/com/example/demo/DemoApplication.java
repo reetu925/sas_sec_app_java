@@ -14,7 +14,7 @@ public class DemoApplication {
 	
 	public static void main(String[] args) throws Exception{
 		SpringApplication.run(DemoApplication.class, args);
-		  Class.forName("com.mysql.jdbc.Driver"); 
+		  Class.forName("com.mysql.cj.jdbc.Driver"); 
 
 	      // Step 2: Establish the connection to the database 
 	      //String url = "jdbc:mysql://localhost:3306/sec_schema"; 
