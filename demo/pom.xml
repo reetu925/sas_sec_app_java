@@ -57,7 +57,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<finalName>oracleDBConnection</finalName>
+	
 	</build>
 
 </project>
