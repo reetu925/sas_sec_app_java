@@ -34,7 +34,7 @@ public class DemoApplication {
 	        {
 	            Connection connection = null;
 	            try {
-	                Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
+	                Class.forName("com.mysql.jdbc.Driver").newInstance();
 	                System.out.println("This statement Before connection");
 	                connection = DriverManager.getConnection(url, username, password);
 	                System.out.println("connected to"+url);
