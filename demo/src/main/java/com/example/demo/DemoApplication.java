@@ -13,7 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class DemoApplication {
-/*	
+	
 	  public static void main(String[] args) throws Exception {
 	        SpringApplication.run(DemoApplication.class, args);
 	        
@@ -59,14 +59,17 @@ public class DemoApplication {
 	                System.out.println("state " + ex.getSQLState());
 	                System.out.println("message " + ex.getMessage());
 	                System.out.println("error " + ex.getErrorCode());
+	                System.out.println("inside SQL exception");
+	                System.out.println("stack trace  " );
+	                ex.printStackTrace();
 	            }
 	            catch (Exception ex) {
 	                ex.printStackTrace();
 	            }
 	            return connection;
-	    }*/
+	    }
 
-	public static void main(String[] args) throws Exception {
+	/*public static void main(String[] args) throws Exception {
 		SpringApplication.run(DemoApplication.class, args);
 
 		String SCL = "jdbc:mysql://mysqlz04.sasken.com:3306/gurukulnew ";
@@ -92,6 +95,6 @@ public class DemoApplication {
 
 		}
 
-	}
+	}*/
 
 }
