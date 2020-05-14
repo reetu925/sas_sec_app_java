@@ -2,7 +2,9 @@ package com.example.demo;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -34,9 +36,16 @@ public class DemoApplication {
 	                System.out.println("This statement Before connection");
 	                connection = DriverManager.getConnection(url, username, password);
 	                System.out.println("connected to"+url);
+	                Statement stmt = null;
+	                
+	                stmt = connection.createStatement();
+	                ResultSet rs = stmt.executeQuery("show variables like '%version%'");
+	                String name = null;
+	                while (rs.next()) {
+	                	 name= rs.getString("variablename");
 
-	 
-
+	                }
+	                System.out.println("variablename "+name);
 	                System.out.println("connected to SEC DB");
 	            } catch (SQLException ex) {
 	                System.out.println("state " + ex.getSQLState());
