@@ -13,7 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class DemoApplication {
-	
+/*	
 	  public static void main(String[] args) throws Exception {
 	        SpringApplication.run(DemoApplication.class, args);
 	        
@@ -64,9 +64,9 @@ public class DemoApplication {
 	                ex.printStackTrace();
 	            }
 	            return connection;
-	    }
+	    }*/
 
-	/*public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Exception {
 		SpringApplication.run(DemoApplication.class, args);
 
 		String SCL = "jdbc:mysql://mysqlz04.sasken.com:3306/gurukulnew ";
@@ -93,5 +93,5 @@ public class DemoApplication {
 		}
 
 	}
-*/
+
 }
