@@ -24,8 +24,8 @@ public class DemoApplication {
 	        getConnection(SCL_URL, SCLuserName,SCLpassword);
 	        
 	        String SEC_URL = "jdbc:mysql://localhost:3306/sec_schema";
-	        String SECuserName = "mysql";
-	        String SECpassword = "root";
+	        String SECuserName = "root";
+	        String SECpassword = "mysql";
 	        
 	        getConnection(SEC_URL,SECuserName,SECpassword);
 	        
