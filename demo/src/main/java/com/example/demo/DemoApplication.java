@@ -15,7 +15,9 @@ public class DemoApplication {
 
 		String SCL = "jdbc:mysql://mysqlz04.sasken.com:3306/gurukulnew ";
 
-		String SEC = "jdbc:mysql://10.1.101.52:3306/sec_schema";
+		String SEC = "jdbc:mysql://10.1.101.52:3306/sec_schema?user=mysql&password=root&useUnicode=true&characterEncoding=UTF-8";
+		
+		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 			System.out.println("This statement Before connection");
@@ -24,7 +26,8 @@ public class DemoApplication {
 
 			System.out.println("trying connection to  SEC DB");
 
-			Connection conn1 = DriverManager.getConnection(SEC, "mysql", "root");
+			//Connection conn1 = DriverManager.getConnection(SEC, "mysql", "root");
+			Connection conn1=DriverManager.getConnection(SEC);
 			System.out.println("connected to SEC DB");
 		} catch (SQLException ex) {
 			System.out.println("state " + ex.getSQLState());
