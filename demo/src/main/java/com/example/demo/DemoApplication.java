@@ -42,14 +42,19 @@ public class DemoApplication {
 	                
 	                stmt = connection.createStatement();
 	                ResultSet rs = stmt.executeQuery("show variables like '%version%'");
-	                String name = null;
-	                List<ResultSet> list=new ArrayList<ResultSet>();
+	                String Value = null;
+	                String Variable = null;
+	                List<String> list=new ArrayList<String>();
 	                while (rs.next()) {
-	                	 name= rs.getString("Variable_Name");
+	                	 Value= rs.getString("Value");
+	                	 Variable=rs.getString("Variable_name");
+	                	list.add(Variable+ ":"+Value);
 
 	                }
-	                System.out.println("variablename "+name);
-	                System.out.println("connected to SEC DB");
+	               for(String str:list) {
+	            	   System.out.println(str);
+	               }
+	              
 	            } catch (SQLException ex) {
 	                System.out.println("state " + ex.getSQLState());
 	                System.out.println("message " + ex.getMessage());
