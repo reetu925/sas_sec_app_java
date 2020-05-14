@@ -23,7 +23,7 @@ public class DemoApplication {
 	        
 	        getConnection(SCL_URL, SCLuserName,SCLpassword);
 	        
-	        String SEC_URL = "jdbc:mysql://localhost:3306/sec_schema";
+	        String SEC_URL = "jdbc:mysql://10.1.101.52:3306/sec_schema";
 	        String SECuserName = "root";
 	        String SECpassword = "root";
 	        
