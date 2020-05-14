@@ -10,29 +10,29 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class DemoApplication {
 
-	
-	
-	public static void main(String[] args) throws Exception{
+	public static void main(String[] args) throws Exception {
 		SpringApplication.run(DemoApplication.class, args);
-		 
 
-	      // Step 2: Establish the connection to the database 
-	      String url = "jdbc:mysql://10.1.101.52:3306/sec_schema"; 
-	      //String url = "jdbc:mysql://localhost:3306/sec_schema"; 
-	      //String url =  "jdbc:mysql://localhost:3306/sec_schema";
-	      System.out.println("This statement Before connection");
-	      try {
-	    	  Class.forName("com.mysql.cj.jdbc.Driver").newInstance(); 
-	    //  Connection conn = DriverManager.getConnection(url); 
-		  Connection conn = DriverManager.getConnection(url,"mysql","root");  
-	      System.out.println("This statement after connection");
-	      }catch(SQLException ex) {
-	    	  System.out.println("state "+ex.getSQLState());
-	    	  System.out.println("message "+ex.getMessage());
-	    	  System.out.println("error "+ex.getErrorCode());
-	    	  
-	      }
-	
+		String SCL = "jdbc:mysql://mysqlz04.sasken.com:3306/gurukulnew ";
+
+		String SEC = "jdbc:mysql://10.1.101.52:3306/sec_schema";
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
+			System.out.println("This statement Before connection");
+			Connection conn = DriverManager.getConnection(SCL, "gurukulread", "hou9Ki_e");
+			System.out.println("connected to Gurukuldb");
+
+			System.out.println("trying connection to  SEC DB");
+
+			Connection conn1 = DriverManager.getConnection(SEC, "mysql", "root");
+			System.out.println("connected to SEC DB");
+		} catch (SQLException ex) {
+			System.out.println("state " + ex.getSQLState());
+			System.out.println("message " + ex.getMessage());
+			System.out.println("error " + ex.getErrorCode());
+
+		}
+
 	}
 
 }
