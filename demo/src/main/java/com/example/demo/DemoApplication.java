@@ -5,6 +5,8 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -41,8 +43,9 @@ public class DemoApplication {
 	                stmt = connection.createStatement();
 	                ResultSet rs = stmt.executeQuery("show variables like '%version%'");
 	                String name = null;
+	                List<ResultSet> list=new ArrayList<ResultSet>();
 	                while (rs.next()) {
-	                	 name= rs.getString("variablename");
+	                	 name= rs.getString("Variable_Name");
 
 	                }
 	                System.out.println("variablename "+name);
